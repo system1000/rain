@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:background="#999999"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="返回"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:id="@+id/Go_Back"
+            android:drawableLeft="@drawable/Go_Back"
+            android:drawablePadding="-5px" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <fragment
+            class="CloudBooks.FileListFragment"
+            android:id="@+id/file_list_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>
